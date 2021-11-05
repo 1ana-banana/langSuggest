@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+  <link href='css/styles.css' rel='stylesheet' type='text/css'>
+  <script src='js/jquery-3.6.0.js'></script>
+  <script src='js/scripts.js'></script>
+  <title>A Programming Language Selector</title>
+</head>
+<body>
+  <div class='container'>
+    <div class='jumbotron'>
+      <h1>Answer the below questions to find out what programming language you should learn.</h1>
+    </div>
+    <div>
+      <form id='formOne'>
+        <label for='faveSeason'>Your Favorite Season</label>
+        <select class='form-control' id='faveSeason'>
+          <option>Spring</option>
+          <option>Summer</option>
+          <option>Autumn</option>
+          <option>Winter</option>
+        </select>
+        <br>
+        <label for='faveAnimal'>Your Most Preferred Animal</label>
+        <select class='form-control' id='faveAnimal'>
+          <option>Dog</option>
+          <option>Cat</option>
+          <option>Bird</option>
+        </select>
+        <br>
+        <label for='faveBeverage'>Your Favorite Beverage</label>
+        <select class='form-control' id='faveBeverage'>
+          <option>Coffee</option>
+          <option>Tea</option>
+          <option>Water</option>
+        </select>
+        <br>
+        <label for='ambition'>What do you want to do, out of the below options?</label>
+        <select class='form-control' id='ambition'>
+          <option>Front-end Programming</option>
+          <option>Back-end Programming</option>
+          <option>UX</option>
+        </select>
+        <br>
+        <label for='transport'>Your Most Preferred Mode of Transport</label>
+        <select class='form-control' id='transport'>
+          <option>Motorcycle</option>
+          <option>Car</option>
+          <option>Bicycle/Public Transport</option>
+        </select>
+        <br>
+        <button type='submit' class='btn'>Show me the language I should learn!</button>
+      </form>
+    </div>
+    <br>
+    <div class='card'>
+      <h1>Look, here's what you should do:</h1>
+    </div>
+        <p id='python'>I believe in you. Go learn Python!!</p>
+        <p id='javascript'>I believe in you. Go learn JavaScript!!</p>
+        <p id='react'>I believe in you. Go learn React!!</p>
+  </div>
+</body>
+</html>
