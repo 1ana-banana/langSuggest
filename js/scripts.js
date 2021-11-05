@@ -14,13 +14,16 @@ $(document).ready(function() {
     const totalInput = seasonInput+animalInput+beverageInput+ambitionInput+transportInput;
     console.log('This is the total input value:' + totalInput)
       if(totalInput <= 5) {
-        $('#react').show();
+        $('#results').show();
+        $("#languageName").text('REACT');
       }
         else if (totalInput < 12) {
-          $('#python').show();
+          $('#results').show();
+          $("#languageName").text('PYTHON');
         }
         else {
-          $('#javascript').show();
+          $('#results').show();
+          $("#languageName").text('JAVASCRIPT');
         }
   });
 });
