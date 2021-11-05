@@ -13,41 +13,41 @@
       <h1>Answer the below questions to find out what programming language you should learn.</h1>
     </div>
     <div>
-      <form id='formOne'>
+      <form id='languageTest'>
         <label for='faveSeason'>Your Favorite Season</label>
         <select class='form-control' id='faveSeason'>
-          <option>Spring</option>
-          <option>Summer</option>
-          <option>Autumn</option>
-          <option>Winter</option>
+          <option value='1'>Spring</option>
+          <option value='2'>Summer</option>
+          <option value='3'>Autumn</option>
+          <option value='4'>Winter</option>
         </select>
         <br>
         <label for='faveAnimal'>Your Most Preferred Animal</label>
         <select class='form-control' id='faveAnimal'>
-          <option>Dog</option>
-          <option>Cat</option>
-          <option>Bird</option>
+          <option value='1'>Dog</option>
+          <option value='2'>Cat</option>
+          <option value='3'>Bird</option>
         </select>
         <br>
         <label for='faveBeverage'>Your Favorite Beverage</label>
         <select class='form-control' id='faveBeverage'>
-          <option>Coffee</option>
-          <option>Tea</option>
-          <option>Water</option>
+          <option value='1'>Coffee</option>
+          <option value='2'>Tea</option>
+          <option value='3'>Water</option>
         </select>
         <br>
         <label for='ambition'>What do you want to do, out of the below options?</label>
         <select class='form-control' id='ambition'>
-          <option>Front-end Programming</option>
-          <option>Back-end Programming</option>
-          <option>UX</option>
+          <option value='1'>Fullstack Programming</option>
+          <option value='2'>Back-end Programming</option>
+          <option value='3'>UX</option>
         </select>
         <br>
         <label for='transport'>Your Most Preferred Mode of Transport</label>
         <select class='form-control' id='transport'>
-          <option>Motorcycle</option>
-          <option>Car</option>
-          <option>Bicycle/Public Transport</option>
+          <option value='1'>Motorcycle</option>
+          <option value='2'>Car</option>
+          <option value='3'>Bicycle/Public Transport</option>
         </select>
         <br>
         <button type='submit' class='btn'>Show me the language I should learn!</button>
@@ -57,9 +57,17 @@
     <div class='card'>
       <h1>Look, here's what you should do:</h1>
     </div>
-        <p id='python'>I believe in you. Go learn Python!!</p>
-        <p id='javascript'>I believe in you. Go learn JavaScript!!</p>
-        <p id='react'>I believe in you. Go learn React!!</p>
+    <div id='results'>
+      <div id="react">
+        <p>I believe in you. Go learn React!!</p>
+      </div>
+      <div id="javascript">
+        <p>I believe in you. Go learn JavaScript!!</p>
+      </div>
+      <div id="python">
+        <p>I believe in you. Go learn Python!!</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>

@@ -1,13 +1,26 @@
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
+  $('form#languageTest').submit(function(event) {
     event.preventDefault();
-    const seasonInput = $("input#faveSeason").val();
-    const animalInput = $("input#faveAnimal").val();
-    const beverageInput= $("input#faveBeverage").val();
-    const ambitionInput = $("input#ambition").val();
-    const transportInput = $("input#transport").val();
-      if(seasonInput==='Spring' && animalInput==='Dog' && beverageInput==='Coffee' && ambitionInput==='Front-end Programming' && transportInput==='Motorcycle') {
+    const seasonInput = parseInt($("select#faveSeason").val());
+    const animalInput = parseInt($("select#faveAnimal").val());
+    const beverageInput= parseInt($("select#faveBeverage").val());
+    const ambitionInput = parseInt($("select#ambition").val());
+    const transportInput = parseInt($("select#transport").val());
+    console.log(seasonInput);
+    console.log(animalInput);
+    console.log(beverageInput);
+    console.log(ambitionInput);
+    console.log(transportInput);
+    const totalInput = seasonInput+animalInput+beverageInput+ambitionInput+transportInput;
+    console.log('This is the total input value:' + totalInput)
+      if(totalInput <= 5) {
         $('#react').show();
       }
+        else if (totalInput < 12) {
+          $('#python').show();
+        }
+        else {
+          $('#javascript').show();
+        }
   });
 });
