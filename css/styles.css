@@ -1,3 +1,9 @@
-#language {
+#results {
   display: none;
+}
+
+.btn {
+  display: block;
+  border: solid blue;
+  background-color: burlywood;
 }
