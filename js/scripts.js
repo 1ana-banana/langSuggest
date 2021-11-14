@@ -7,18 +7,17 @@ $(document).ready(function() {
     const ambitionInput = parseInt($("select#ambition").val());
     const transportInput = parseInt($("select#transport").val());
     const totalInput = seasonInput+animalInput+beverageInput+ambitionInput+transportInput;
-    console.log('This is the total input value:' + totalInput)
-      if(totalInput <= 5) {
+    if(totalInput <= 5) {
+      $('#results').show();
+      $("#languageName").text('REACT');
+    }
+      else if (totalInput < 12) {
         $('#results').show();
-        $("#languageName").text('REACT');
+        $("#languageName").text('PYTHON');
       }
-        else if (totalInput < 12) {
-          $('#results').show();
-          $("#languageName").text('PYTHON');
-        }
-        else {
-          $('#results').show();
-          $("#languageName").text('JAVASCRIPT');
-        }
+      else {
+        $('#results').show();
+        $("#languageName").text('JAVASCRIPT');
+      }
   });
 });
